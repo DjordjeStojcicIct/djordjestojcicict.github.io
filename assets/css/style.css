@@ -284,3 +284,23 @@ footer > p {
     overflow: hidden;
 }
 
+.modal-body img {
+    max-width: 100%;
+}
+
+.modal-body h4,
+.modal-body p {
+    font-size: 1.5em;
+}
+
+.modal-dialog {
+    max-width: 600px;
+}
+
+.text-center-v {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    height: 100% !important;
+  }
+

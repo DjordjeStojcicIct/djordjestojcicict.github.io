@@ -1,14 +1,14 @@
 const listIgraca = [
-    {ime: 'Milos Teodosic', imgPath: 'assets/images/igraci/teo.png', dres:'4',},
-    {ime: 'Adam Hanga', imgPath: 'assets/images/igraci/hanga.png', dres:'5',},
-    {ime: 'Dejan Davidovac', imgPath: 'assets/images/igraci/davidovac.png', dres:'7',},
-    {ime: 'Marko Simonovic', imgPath: 'assets/images/igraci/simonovic.png', dres:'11',},
-    {ime: 'Sabaz Nejpir', imgPath: 'assets/images/igraci/nejpir.png', dres:'13',},
-    {ime: 'Majk Tobi', imgPath: 'assets/images/igraci/tobi.png', dres:'18',},
-    {ime: 'Dzoel Bolomoboj', imgPath: 'assets/images/igraci/bolomboj.png', dres:'21',},
-    {ime: 'Rokas Geidraitis', imgPath: 'assets/images/igraci/rokas.png', dres:'31',},
-    {ime: 'Nemanja Bjelica', imgPath: 'assets/images/igraci/bjelica.png', dres:'44',},
-    {ime: 'Yago dos Santos', imgPath: 'assets/images/igraci/yago.png', dres:'99',},
+    {ime: 'Milos Teodosic', imgPath: 'assets/images/igraci/teo.png', dres:'4', visina: '196 cm', datum:'19/03/1987', nacionalnost:'Srbija', position:'Bek'},
+    {ime: 'Adam Hanga', imgPath: 'assets/images/igraci/hanga.png', dres:'5',visina: '200 cm', datum:'12/04/1989', nacionalnost:'Mađarska', position:'Bek'},
+    {ime: 'Dejan Davidovac', imgPath: 'assets/images/igraci/davidovac.png', dres:'7',visina: '203 cm', datum:'17/02/1995', nacionalnost:'Srbija', position:'Krilo'},
+    {ime: 'Marko Simonovic', imgPath: 'assets/images/igraci/simonovic.png', dres:'11',visina: '213 cm', datum:'15/10/1999', nacionalnost:'Crna Gora', position:'Centar'},
+    {ime: 'Sabaz Nejpir', imgPath: 'assets/images/igraci/nejpir.png', dres:'13',visina: '183 cm', datum:'14/07/1991', nacionalnost:'SAD', position:'Bek'},
+    {ime: 'Majk Tobi', imgPath: 'assets/images/igraci/tobi.png', dres:'18',visina: '213 cm', datum:'10/10/1994', nacionalnost:'SAD', position:'Centar'},
+    {ime: 'Dzoel Bolomoboj', imgPath: 'assets/images/igraci/bolomboj.png', dres:'21',visina: '203 cm', datum:'28/01/1994', nacionalnost:'Rusija/SAD', position:'Centar'},
+    {ime: 'Rokas Geidraitis', imgPath: 'assets/images/igraci/rokas.png', dres:'31',visina: '201 cm', datum:'16/08/1992', nacionalnost:'Litvanija', position:'Krilo'},
+    {ime: 'Nemanja Bjelica', imgPath: 'assets/images/igraci/bjelica.png', dres:'44',visina: '208 cm', datum:'09/05/1988', nacionalnost:'Srbija', position:'Krilo'},
+    {ime: 'Yago dos Santos', imgPath: 'assets/images/igraci/yago.png', dres:'99',visina: '175 cm', datum:'09/03/1999', nacionalnost:'Brazil', position:'Bek'},
 ];
 
 const listKlubova=[
@@ -118,23 +118,27 @@ $(document).ready(()=> {
 
 function showModal(id){
     var a = listIgraca[id];
-    var text = `<div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 id="exampleModalLabel">${a.ime}</h5>
-                            <button type="button" onclick="closeModal">&times;</button>
+    var text = `<div class="modal-header">
+                    <h1 class="modal-title" id="playerModalLabel">${a.ime}</h1>
+                    <span class="fa fa-times" data-bs-dismiss="modal" aria-hidden="true"></span>
+                </div>
+                <div  class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <img src="${a.imgPath}" alt="Slika ${a.ime}" class="img-fluid">
                         </div>
-                        <div class="center">
-                            <img src="${a.imgPath}">
+                        <div class="col-md-6 text-start text-center-v">
+                            <br/>
+                            <h4>Broj dresa: ${a.dres}</h4><br/>
+                            <h4>Visina: ${a.visina}</h4><br/>
+                            <h4>Datum rođenja: ${a.datum}</h4><br/>
+                            <h4>Nacionalnost: ${a.nacionalnost}</h4><br/>
+                            <h4>Pozicija: ${a.pozicija}</h4><br/>
                         </div>
                     </div>
                 </div>`;
-    document.getElementById('modal1').innerHTML = text;
-    $('#modal1').modal('show');
-}
-
-function closeModal(){
-    $('#modal1').modal('toggle');
+    document.getElementById('sadrzajModal').innerHTML = text;
+    $('#igracModal').modal('show');
 }
 
 function dinamickoIspisivanjeSekcijeTim(){
