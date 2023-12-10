@@ -38,14 +38,16 @@ const navList = [
     {text:'Početna', href:'index.html'},
     {text:'Tim', href:'#galerija'},
     {text:'Sezonske Karte', href:'#sezonskeKarte'},
+    {text:'O Autoru', href:'assets/pages/autor.html'},
 ];
 
 const footerNavigacija = [
     {text:'Početna', href:'index.html'},
     {text:'Tim', href:'#galerija'},
-    {text:'Sezonske Karte', href:'#formContainer'},
+    {text:'Sezonske Karte', href:'#sezonskeKarte'},
     {text:'O Autoru', href:'assets/pages/autor.html'},
-    {text:'Dokumentacija', href:'assets/pages/dokumentacija.pdf'},
+    {text:'Dokumentacija', href:'assets/doc/Dokumentacija.pdf'},
+    {text:'Sitemap', href:'sitemap.xml'},
 ];
 
 const socialMediaLinkovi = [
@@ -54,18 +56,8 @@ const socialMediaLinkovi = [
     { href: "https://kkcrvenazvezda.rs/", iconClass: "fa-brands fa-google" },
     { href: "https://www.instagram.com/crvenazvezdakk/", iconClass: "fa-brands fa-instagram" },
     { href: "https://rs.linkedin.com/company/kk-crvena-zvezda-mts", iconClass: "fa-brands fa-linkedin" }
-  ];
+];
 
-  const footerLinkovi = [
-    { href: "#pocetna", text: "Početna" },
-    { href: "#tim", text: "Tim" },
-    { href: "#sezonskeKarte", text: "Sezonske Karte" },
-    { href: "assets/pages/autor.html", text: "O Autoru" },
-    { href: "#", text: "Dokumentacija" }
-  ];
-
-
-// Dinamicko dodavanja navigacije
 $(document).ready(()=> {
     dinamickiIspisivanjeMenija();
     dinamickoIspisivanjeSlajdera();
@@ -133,7 +125,7 @@ function showModal(id){
                             <h4>Visina: ${a.visina}</h4><br/>
                             <h4>Datum rođenja: ${a.datum}</h4><br/>
                             <h4>Nacionalnost: ${a.nacionalnost}</h4><br/>
-                            <h4>Pozicija: ${a.pozicija}</h4><br/>
+                            <h4>Pozicija: ${a.position}</h4><br/>
                         </div>
                     </div>
                 </div>`;
@@ -172,7 +164,7 @@ function dinamickoIspisivanjeSlajdera(){
     var slajderText = '';
     for(var vest of listaVesti){
         slajderText += `<div class="w3-display-container mySlides">
-                            <img class="sliderSlika" src="${vest.imgPath}" style="width:100%">
+                            <img class="sliderSlika" src="${vest.imgPath}" style="width:100% alt="slajder">
                             <div class="vest w3-display-bottomleft w3-large w3-container w3-padding-40">
                                 <h2>${vest.title.toUpperCase()}</h2>
                             </div>
@@ -189,7 +181,7 @@ function dinamickioIspisvanjeTabele(lista, sortString){
     for(var item of lista){
         tableBody+=`<tr>
                         <td>${item.pozicija.toString()}</td>
-                        <td><img class='grb' src="${item.imgPath}"/>${item.ime}</td>
+                        <td><img class='grb' src="${item.imgPath}" alt='${item.ime}'/>${item.ime}</td>
                         <td>${item.w.toString()}</td>
                         <td>${item.l.toString()}</td>
                     </tr>`;
@@ -244,7 +236,7 @@ function dinamickoIspisivanjeSocialLinkova(){
 function dinamickoIspisivanjeFooterLinkova(){
     var x = document.getElementById('footer-linkovi');
 
-    for (let i = 0; i < footerLinkovi.length; i++) {
+    for (let i = 0; i < footerNavigacija.length; i++) {
         var link = footerNavigacija[i];
 
         var div = document.createElement('div');

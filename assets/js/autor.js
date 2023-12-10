@@ -1,15 +1,17 @@
-const footerLinkovi = [
-    { href: "../../index.html", text: "Početna" },
-    { href: "../../index.html#galerija", text: "Tim" },
-    { href: "../../index.html#sezonskeKarte", text: "Sezonske Karte" },
-    { href: "autor.html", text: "O Autoru" },
-    { href: "#", text: "Dokumentacija" }
+const footerNavigacija = [
+    {text:'Početna', href:'../../index.html'},
+    {text:'Tim', href:'../../index.html#galerija'},
+    {text:'Sezonske Karte', href:'../../index.html#sezonskeKarte'},
+    {text:'O Autoru', href:'autor.html'},
+    {text:'Dokumentacija', href:'../doc/Dokumentacija.pdf'},
+    {text:'Sitemap', href:'../../sitemap.xml'},
 ];
 
 const navList = [
     {text:'Početna', href:'../../index.html'},
     {text:'Tim', href:'../../index.html#galerija'},
     {text:'Sezonske Karte', href:'../../index.html#sezonskeKarte'},
+    { href: "autor.html", text: "O Autoru" },
 ];
 
 const socialMediaLinkovi = [
@@ -34,7 +36,7 @@ function dinamickoIspisivanjeNavigacije(){
 
 function dinamickoIspisavanjeFootera(){
     var tekst = '';
-    for(var item of footerLinkovi){
+    for(var item of footerNavigacija){
         tekst+=`<div class='col-md-6'>
                     <p>
                         <a class="text-dark" href="${item.href}"class="text-danger text-center">${item.text}</a>
