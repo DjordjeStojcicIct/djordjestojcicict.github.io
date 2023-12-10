@@ -29,7 +29,7 @@ function dinamickoIspisivanjeNavigacije(){
         tekst+='<li class="nav-item"><a class="nav-link" href="'+item.href+'">'+item.text.toUpperCase()+'</a></li>';
     }
     tekst+='</ul>';
-    $('#navigacija').append(tekst);
+    document.getElementById('navigacija').innerHTML = tekst;
 }
 
 

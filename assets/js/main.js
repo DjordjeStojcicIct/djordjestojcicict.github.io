@@ -156,7 +156,7 @@ function dinamickiIspisivanjeMenija(){
         tekst+='<li class="nav-item"><a class="nav-link" href="'+item.href+'">'+item.text.toUpperCase()+'</a></li>';
     }
     tekst+='</ul>';
-    $('#navigacija').append(tekst);
+    document.getElementById('navigacija').innerHTML = tekst;
 }
 
 
@@ -164,7 +164,7 @@ function dinamickoIspisivanjeSlajdera(){
     var slajderText = '';
     for(var vest of listaVesti){
         slajderText += `<div class="w3-display-container mySlides">
-                            <img class="sliderSlika" src="${vest.imgPath}" style="width:100% alt="slajder">
+                            <img class="sliderSlika" src="${vest.imgPath}" style="width:100%;" alt="slajder">
                             <div class="vest w3-display-bottomleft w3-large w3-container w3-padding-40">
                                 <h2>${vest.title.toUpperCase()}</h2>
                             </div>
