@@ -1,13 +1,13 @@
-const meniUrlIndex = 'https://djordjestojcicict.github.io/assetst/data/nav.json';
-const meniUrlPages = '../data/nav.json';
-const proizvodiUrlIndex = 'assets/data/products.json';
-const proizvodiUrlPages = '../data/products.json';
-const footerUrlIndex = 'assets/data/footer.json';
-const footerUrlPages = '../data/footer.json';
-const instagramUrl = 'assets/data/instagram.json';
-const headerXmlUrl = 'assets/data/header.xml';
-const exploreXmlUrl = 'assets/data/explore_products.xml';
-const autorXmlUrl = '../data/autor.xml';
+const meniUrlIndex = 'https://djordjestojcicict.github.io/assets/data/nav.json';
+const meniUrlPages = 'https://djordjestojcicict.github.io/assets/data/nav.json';
+const proizvodiUrlIndex = 'https://djordjestojcicict.github.io/assets/data/products.json';
+const proizvodiUrlPages = 'https://djordjestojcicict.github.io/assets/data/products.json';
+const footerUrlIndex = 'https://djordjestojcicict.github.io/assets/data/footer.json';
+const footerUrlPages = 'https://djordjestojcicict.github.io/assets/data/footer.json';
+const instagramUrl = 'https://djordjestojcicict.github.io/assets/data/instagram.json';
+const headerXmlUrl = 'https://djordjestojcicict.github.io/assets/data/header.xml';
+const exploreXmlUrl = 'https://djordjestojcicict.github.io/assets/data/explore_products.xml';
+const autorXmlUrl = 'https://djordjestojcicict.github.io/assets/data/autor.xml';
 
 document.addEventListener('DOMContentLoaded', function () {
     popuniNizIsStoridza();
