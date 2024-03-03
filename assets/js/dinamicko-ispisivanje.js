@@ -9,6 +9,8 @@ const exploreXmlUrl = 'https://djordjestojcicict.github.io/assets/data/explore_p
 const autorXmlUrl = 'https://djordjestojcicict.github.io/assets/data/autor.xml';
 
 document.addEventListener('DOMContentLoaded', function () {
+    console.log(href);
+
     popuniNizIsStoridza();
     dohvatanjePodatakaZaIspisivanje(meniUrl, ispisNavigacije);
     ispisiProizvode();
@@ -37,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 let href = location.href;
-let isIndex = href.includes('index.html') || href == 'https://djordjestojcicict.github.io/';
+let isIndex = href.includes('index.html') || href == 'https://djordjestojcicict.github.io/' || href == 'https://djordjestojcicict.github.io';
 let isAbout = href.includes('about.html');
 let isProducts = href.includes('products.html');
 let lajkovaniProizvodi = [1,2,3];
