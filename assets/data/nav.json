@@ -1,0 +1,53 @@
+[
+    {
+        "href_index":"index.html",
+        "href_pages":"../../index.html",
+        "text":"Home",
+        "hasSubmenu":false,
+        "submenu":[]
+    },
+    {
+        "href_index":"#men",
+        "href_pages":"../../index.html#man",
+        "text":"Men's",
+        "hasSubmenu":false,
+        "submenu":[]
+    },
+    {
+        "href_index":"#women",
+        "href_pages":"../../index.html#women",
+        "text":"Womens's",
+        "hasSubmenu":false,
+        "submenu":[]
+    },
+    {
+        "href_index":"#kids",
+        "href_pages":"../../index.html#kids",
+        "text":"Kid's",
+        "hasSubmenu":false,
+        "submenu":[]
+    },
+    {
+        "href":"",
+        "text":"Pages",
+        "hasSubmenu":true,
+        "submenu":[
+            {
+                "href_index":"assets/pages/about.html",
+                "href_pages":"about.html",
+                "href":"about.html",
+                "text":"About Author"
+            },
+            {
+                "href_index":"assets/pages/products.html",
+                "href_pages":"products.html",
+                "text":"Products"
+            },
+            {
+                "href_index":"assets/pages/contact.html",
+                "href_pages":"contact.html",
+                "text":"Sign In"
+            }
+        ]
+    }
+]

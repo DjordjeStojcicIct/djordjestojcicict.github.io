@@ -1,0 +1,32 @@
+[
+    {
+        "text":"Fashion",
+        "src":"assets/images/instagram-01.jpg",
+        "alt":"Instagram Image 1"
+    },
+    {
+        "text":"New",
+        "src":"assets/images/instagram-02.jpg",
+        "alt":"Instagram Image 2"
+    },
+    {
+        "text":"Brand",
+        "src":"assets/images/instagram-03.jpg",
+        "alt":"Instagram Image 3"
+    },
+    {
+        "text":"Makeup",
+        "src":"assets/images/instagram-04.jpg",
+        "alt":"Instagram Image 4"
+    },
+    {
+        "text":"Leather",
+        "src":"assets/images/instagram-05.jpg",
+        "alt":"Instagram Image 5"
+    },
+    {
+        "text":"Bag",
+        "src":"assets/images/instagram-06.jpg",
+        "alt":"Instagram Image 6"
+    }
+]

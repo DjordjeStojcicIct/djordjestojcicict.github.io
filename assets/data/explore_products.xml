@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<explore_products>
+    <levakolona>
+        <title>Explore Our Products</title>
+        <p1>Discover elegance redefined with our curated collection. Each piece is a statement, a manifestation of your unique style. From chic dresses to casual essentials, find the perfect ensemble to express your individuality.</p1>
+        <p2>Explore a world of fashion where comfort meets sophistication. Our clothing embraces trends without compromising on comfort. Unleash your confidence with pieces designed for every occasion, effortlessly blending style and ease.</p2>
+        <p3>At Hexashop, we redefine fashion with a touch of luxury. Our collection embodies timeless grace and contemporary charm. Elevate your wardrobe with our meticulously crafted garments, each a testament to the artistry of modern fashion.</p3>
+        <quote>Elegance is an attitude, and fashion is the language spoken by those who dare to be timeless in a transient world.</quote>
+        <href>assets/pages/products.html</href>
+    </levakolona>
+    <desnakolona>
+        <sub_column>
+            <hasImage>false</hasImage>
+            <title>Leather Bags</title>
+            <text>Latest Collection</text>
+            <class>leather</class>
+        </sub_column>
+        <sub_column>
+            <hasImage>true</hasImage>
+            <image>
+                <src>assets/images/explore-image-01.jpg</src>
+                <alt>First Image</alt>
+            </image>
+            <class>first-image</class>
+        </sub_column>
+        <sub_column>
+            <hasImage>true</hasImage>
+            <image>
+                <src>assets/images/explore-image-02.jpg</src>
+                <alt>Second Image</alt>
+            </image>
+            <class>second-image</class>
+        </sub_column>
+        <sub_column>
+            <hasImage>false</hasImage>
+            <title>Different Types</title>
+            <text>Over 304 Products</text>
+            <class>types</class>
+        </sub_column>
+        
+    </desnakolona>
+</explore_products>

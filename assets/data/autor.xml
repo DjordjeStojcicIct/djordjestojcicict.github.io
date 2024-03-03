@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<autor>
+    <title>Đorđe Stojčić</title>
+    <subtitle>Flutter developer</subtitle>
+    <h1>About Me</h1>
+    <p1>In the red corner. Standing 6 feet 4 inches tall, weighing in at 220 lbs, fighting out of Stockton, California by way of Padinska Skela, Serbia!</p1>
+    <p2>Presenting, The Raining, Defending, Undesputed, Longest Active Student at ICT school !!! The one ! The only ! Đorđe !! Stojčić !!!</p2>
+    <image>
+        <src>../images/about-left-image.jpg</src>
+        <alt>Autor</alt>
+    </image>
+</autor>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Hexashop - Product Listing Page</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/templatemo-hexashop.css">
+    <link rel="stylesheet" href="../css/owl-carousel.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
+    <link rel="stylesheet" href="../css/style.css">
+    </head>
+    
+    <body>
+    
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="index.html" class="logo">
+                            <img src="../images/logo.png">
+                        </a>
+                        <ul class="nav">
+                            <!-- Dinamicko ispisvanje sa json podacima -->
+                        </ul>     
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="page-heading" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="inner-content">
+                        <h2>Check Our Products</h2>
+                        <span>Awesome &amp; Creative HTML CSS layout by TemplateMo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+
+    <!-- ***** Products Area Starts ***** -->
+    <section class="section" id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Our Latest Products</h2>
+                        <span>Check out all of our products.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form id="formaFilter">
+            <div class="container my-4">
+                <div class="row">
+                  <!-- Sort by Price -->
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Sort by Price</h5>
+                        <select class="form-select" id="price">
+                          <option value="0">Select</option>
+                          <option value="1">Low to High</option>
+                          <option value="2">High to Low</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Filter by Favorites -->
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Filter by Favorites</h5>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="favoritesCheckbox">
+                          <label class="form-check-label" for="favoritesCheckbox">Show Favorites Only</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Filter by Price Range</h5>
+                        <input type="range" class="form-range" min="0" max="200" id="priceRange">
+                        <span id="priceRangeValue">$0 - $100</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Nije moj kod -->
+                  <script>
+                    let priceRangeInput = document.getElementById('priceRange');
+                    priceRangeInput.addEventListener('input', function() {
+                    let priceRangeValue = document.getElementById('priceRangeValue');
+                    priceRangeValue.textContent = '$0 - $' + priceRangeInput.value;
+                    });
+                  </script>
+            
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Filter by Audience</h5>
+                        <select class="form-select" id="audience">
+                          <option value="all">All</option>
+                          <option value="men">Men</option>
+                          <option value="women">Women</option>
+                          <option value="kids">Kids</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-primary mt-3" id="applyFiltersBtn" onclick="applyFilters()">Apply Filters</button>
+
+                    <button type="button" class="btn btn-secondary mt-3" id="resetFiltersBtn" onclick="resetFilters()">Reset Filters</button>
+                </div>
+                </div>
+            </div>
+        </form>
+        <div class="container">
+            <div class="row" id="proizvodi1">
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row" id="footer">
+                <!-- Dinamicki ispisan -->
+            </div>
+        </div>
+    </footer>
+    
+
+   <script src="../js/jquery-2.1.0.min.js"></script>
+
+   <script src="../js/popper.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+
+
+   <script src="../js/owl-carousel.js"></script>
+   <script src="../js/accordions.js"></script>
+   <script src="../js/datepicker.js"></script>
+   <script src="../js/scrollreveal.min.js"></script>
+   <script src="../js/waypoints.min.js"></script>
+   <script src="../js/jquery.counterup.min.js"></script>
+   <script src="../js/imgfix.min.js"></script> 
+   <script src="../js/slick.js"></script> 
+   <script src="../js/lightbox.js"></script> 
+   <script src="../js/isotope.js"></script> 
+   <script src="../js/dinamicko-ispisivanje.js"></script>
+   <script src="../js/main.js"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,67 @@
+[
+    {
+        "title":"Other",
+        "links":[
+            {
+                "text":"Sitemap",
+                "href_index":"sitemap.xml",
+                "href_pages":"../../sitemap.xml"
+            },
+            {
+                "text":"Documentation",
+                "href_index":"documentation.pdf",
+                "href_pages":"../../documentation.pdf"
+            },
+            {
+                "text":"djordje.stojcic.173.16@ict.edu.rs",
+                "href_index":"https://mail.google.com/",
+                "href_pages":"https://mail.google.com/"
+            }
+        ]
+    },
+    {
+        "title":"Shopping &amp; Categories",
+        "links":[
+            {
+                "text":"Men's Shopping",
+                "href_index":"#men",
+                "href_pages":"../../index.html#men"
+            },
+            {
+                "text":"Women’s Shopping",
+                "href_index":"#women",
+                "href_pages":"../../index.html#women"
+            },
+            {
+                "text":"Kid's Shopping",
+                "href_index":"#kids",
+                "href_pages":"../../index.html#kids"
+            },
+            {
+                "text":"Products",
+                "href_index":"assets/pages/products.html",
+                "href_pages":"products.html"
+            }
+        ]
+    },
+    {
+        "title":"Useful Links",
+        "links":[
+            {
+                "text":"Homepage",
+                "href_index":"#top",
+                "href_pages":"../../index.html#top"
+            },
+            {
+                "text":"About Author",
+                "href_index":"assets/pages/about.html",
+                "href_pages":"about.html"
+            },
+            {
+                "text":"Sign In",
+                "href_index":"assets/pages/contact.html",
+                "href_pages":"contact.html"
+            }
+        ]
+    }
+]

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<header>
+    <levakolona>
+        <title>We Are Hexashop</title>
+        <p1>Discover the epitome of style and comfort with our curated collection of trendsetting apparel</p1>
+        <p2>designed to redefine your wardrobe and elevate your fashion statement.</p2>
+        <image>
+            <src>assets/images/left-banner-image.jpg</src>
+            <alt>Banner Image</alt>
+        </image>
+    </levakolona>
+    <desnakolona>
+        <sub_column>
+            <title>Women</title>
+            <text>Best Clothes For Women</text>
+            <href>#women</href>
+            <image>
+                <src>assets/images/baner-right-image-01.jpg</src>
+                <alt>Right Image 1</alt>
+            </image>
+        </sub_column>
+        <sub_column>
+            <title>Men</title>
+            <text>Best Clothes For Men</text>
+            <href>#men</href>
+            <image>
+                <src>assets/images/baner-right-image-02.jpg</src>
+                <alt>Right Image 2</alt>
+            </image>
+        </sub_column>
+        <sub_column>
+            <title>Kids</title>
+            <text>Best Clothes For Kids</text>
+            <href>#kids</href>
+            <image>
+                <src>assets/images/baner-right-image-03.jpg</src>
+                <alt>Right Image 3</alt>
+            </image>
+        </sub_column>
+        <sub_column>
+            <title>Products</title>
+            <text>Best Trend Products</text>
+            <href>assets/pages/products.html</href>
+            <image>
+                <src>assets/images/baner-right-image-04.jpg</src>
+                <alt>Right Image 4</alt>
+            </image>
+        </sub_column>
+    </desnakolona>
+</header>

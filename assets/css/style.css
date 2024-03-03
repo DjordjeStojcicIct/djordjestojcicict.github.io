@@ -1,0 +1,24 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.gold{
+    color:gold !important;
+}
+
+.white{
+    color:white !important;
+}
+
+.errorBorder {
+    border-color: red !important;
+    border-radius: 0px !important;
+  }
+
+.errorMessage{
+    color:red;
+}
+
+.crvenoSrce{
+    color: red !important;
+}

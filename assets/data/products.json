@@ -1,0 +1,198 @@
+[
+    {
+      "id":1,
+      "type": "men",
+      "title": "Classic Shirt",
+      "price": 39.99,
+      "stars": 4,
+      "img": {
+        "src": "classic-shirt.jpeg",
+        "alt": "Men's Classic Shirt"
+      }
+    },
+    {
+      "id":2,
+      "type": "women",
+      "title": "Summer Dress",
+      "price": 49.99,
+      "stars": 5,
+      "img": {
+        "src": "summer-dress.jpeg",
+        "alt": "Women's Summer Dress"
+      }
+    },
+    {
+      "id":3,
+      "type": "kids",
+      "title": "Dino Pajamas",
+      "price": 29.99,
+      "stars": 4,
+      "img": {
+        "src": "dino_pajamas.jpeg",
+        "alt": "Kids' Dino Pajamas"
+      }
+    },
+    {
+      "id":4,
+      "type": "men",
+      "title": "Leather Jacket",
+      "price": 79.99,
+      "stars": 5,
+      "img": {
+        "src": "lether_jacket.jpeg",
+        "alt": "Men's Leather Jacket"
+      }
+    },
+    {
+      "type": "women",
+      "title": "Floral Skirt",
+      "price": 34.99,
+      "stars": 3,
+      "img": {
+        "src": "floral_skirt.jpeg",
+        "alt": "Women's Floral Skirt"
+      }
+    },
+    {
+      "id":5,
+      "type": "kids",
+      "title": "Superhero T-Shirt",
+      "price": 19.99,
+      "stars": 4,
+      "img": {
+        "src": "superhero_tshirt.jpeg",
+        "alt": "Kids' Superhero T-Shirt"
+      }
+    },
+    {
+      "id":6,
+      "type": "men",
+      "title": "Casual Jeans",
+      "price": 49.99,
+      "stars": 4,
+      "img": {
+        "src": "casual-jeans.jpeg",
+        "alt": "Men's Casual Jeans"
+      }
+    },
+    {
+      "id":7,
+      "type": "women",
+      "title": "High Heels",
+      "price": 59.99,
+      "stars": 4,
+      "img": {
+        "src": "high_heels.jpeg",
+        "alt": "Women's High Heels"
+      }
+    },
+    {
+      "id":8,
+      "type": "kids",
+      "title": "Cartoon Backpack",
+      "price": 24.99,
+      "stars": 5,
+      "img": {
+        "src": "cartoon_backpack.jpeg",
+        "alt": "Kids' Cartoon Backpack"
+      }
+    },
+    {
+      "id":9,
+      "type": "men",
+      "title": "Sporty Sneakers",
+      "price": 59.99,
+      "stars": 4,
+      "img": {
+        "src": "sneakers.jpeg",
+        "alt": "Men's Sporty Sneakers"
+      }
+    },
+    {
+      "id":10,
+      "type": "women",
+      "title": "Elegant Blouse",
+      "price": 44.99,
+      "stars": 5,
+      "img": {
+        "src": "elegant_blouse.jpeg",
+        "alt": "Women's Elegant Blouse"
+      }
+    },
+    {
+      "id":11,
+      "type": "kids",
+      "title": "Unicorn Onesie",
+      "price": 39.99,
+      "stars": 5,
+      "img": {
+        "src": "unicorn_onesie.jpeg",
+        "alt": "Kids' Unicorn Onesie"
+      }
+    },
+    {
+      "id":12,
+      "type": "men",
+      "title": "Plaid Shirt",
+      "price": 29.99,
+      "stars": 3,
+      "img": {
+        "src": "plaid-shirt.jpeg",
+        "alt": "Men's Plaid Shirt"
+      }
+    },
+    {
+      "id":13,
+      "type": "women",
+      "title": "Denim Jacket",
+      "price": 69.99,
+      "stars": 4,
+      "img": {
+        "src": "denim_jacket.jpeg",
+        "alt": "Women's Denim Jacket"
+      }
+    },
+    {
+      "type": "kids",
+      "title": "Dinosaur Hoodie",
+      "price": 34.99,
+      "stars": 4,
+      "img": {
+        "src": "dinosaur_hoodie.jpeg",
+        "alt": "Kids' Dinosaur Hoodie"
+      }
+    },
+    {
+      "type": "men",
+      "title": "Winter Scarf",
+      "price": 19.99,
+      "stars": 4,
+      "img": {
+        "src": "winter-scarf.jpeg",
+        "alt": "Men's Winter Scarf"
+      }
+    },
+    {
+      "id":14,
+      "type": "women",
+      "title": "Leopard Print Blazer",
+      "price": 54.99,
+      "stars": 4,
+      "img": {
+        "src": "leopard_print_blazzer.jpeg",
+        "alt": "Women's Leopard Print Blazer"
+      }
+    },
+    {
+      "id":15,
+      "type": "kids",
+      "title": "Rainbow Umbrella",
+      "price": 14.99,
+      "stars": 5,
+      "img": {
+        "src": "rainbow_umbrella.jpeg",
+        "alt": "Kids' Rainbow Umbrella"
+      }
+    }
+  ]
+  
