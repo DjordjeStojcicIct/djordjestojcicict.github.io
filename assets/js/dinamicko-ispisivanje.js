@@ -1,8 +1,7 @@
-const meniUrlIndex = 'https://djordjestojcicict.github.io/assets/data/nav.json';
-const meniUrlPages = 'https://djordjestojcicict.github.io/assets/data/nav.json';
+const meniUrl = 'https://djordjestojcicict.github.io/assets/data/nav.json';
 const proizvodiUrlIndex = 'https://djordjestojcicict.github.io/assets/data/products.json';
 const proizvodiUrlPages = 'https://djordjestojcicict.github.io/assets/data/products.json';
-const footerUrlIndex = 'https://djordjestojcicict.github.io/assets/data/footer.json';
+const footerUrl = 'https://djordjestojcicict.github.io/assets/data/footer.json';
 const footerUrlPages = 'https://djordjestojcicict.github.io/assets/data/footer.json';
 const instagramUrl = 'https://djordjestojcicict.github.io/assets/data/instagram.json';
 const headerXmlUrl = 'https://djordjestojcicict.github.io/assets/data/header.xml';
@@ -11,8 +10,6 @@ const autorXmlUrl = 'https://djordjestojcicict.github.io/assets/data/autor.xml';
 
 document.addEventListener('DOMContentLoaded', function () {
     popuniNizIsStoridza();
-    let meniUrl = isIndex? meniUrlIndex : meniUrlPages;
-    let footerUrl = isIndex? footerUrlIndex : footerUrlPages;
     dohvatanjePodatakaZaIspisivanje(meniUrl, ispisNavigacije);
     ispisiProizvode();
     if(isIndex){
@@ -40,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 let href = location.href;
-let isIndex = href.includes('index.html');
+let isIndex = href.includes('index.html') || href == 'https://djordjestojcicict.github.io/';
 let isAbout = href.includes('about.html');
 let isProducts = href.includes('products.html');
 let lajkovaniProizvodi = [1,2,3];
