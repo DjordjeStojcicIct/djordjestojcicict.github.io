@@ -1,4 +1,4 @@
-const meniUrlIndex = 'assets/data/nav.json';
+const meniUrlIndex = 'https://djordjestojcicict.github.io/assetst/data/nav.json';
 const meniUrlPages = '../data/nav.json';
 const proizvodiUrlIndex = 'assets/data/products.json';
 const proizvodiUrlPages = '../data/products.json';
