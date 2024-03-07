@@ -47,17 +47,23 @@ let products = [];
 let sortProducts = [];
 
 function dohvatanjePodatakaZaIspisivanje(url, funkcija, dataType){
-    $.ajax({
-        url: url,
-        method:'get',
-        dataType: dataType == null? 'json':dataType,
-        success:function(result){
-            funkcija(result);
-        },
-        error:function(err){
-            console.log(err);
-        },
-    });
+    try{
+        $.ajax({
+            url: url,
+            method:'get',
+            dataType: dataType == null? 'json':dataType,
+            success:function(result){
+                funkcija(result);
+            },
+            error:function(err){
+                console.log(err);
+                window.location.href = "https://djordjestojcicict.github.io/assets/pages/404.html";
+            },
+        });
+    } catch(e){
+        console.log(e);
+        window.location.href = "https://djordjestojcicict.github.io/assets/pages/404.html";
+    }
 }
 
 function ispisNavigacije(niz){
