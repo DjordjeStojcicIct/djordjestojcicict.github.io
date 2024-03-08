@@ -164,7 +164,6 @@ const event1 = new Event('signin');
 function sumitovanje(){
     if(firstNameSuccess && lastNameSuccess && emailSuccess && selectSuccess && radioSuccess && cbSuccess){
         localStorage.setItem('signedIn', 'true');
-        alert(firstName.value);
         localStorage.setItem('firstName', firstName.value);
         localStorage.setItem('lastName', lastName.value);
         localStorage.setItem('email', emaill.value);
